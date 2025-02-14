@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới Thiệu Bản Thân - Độc Đáo và Xịn Sò</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #444;
+      background: linear-gradient(to right, #7f00ff, #e100ff);
+      text-align: center;
+      line-height: 1.8;
+    }
+    header {
+      background-color: #1abc9c;
+      color: white;
+      padding: 3rem 1rem;
+      animation: fadeIn 2s;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
+    .card {
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: #f7f9fc;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      background-color: #4f46e5;
+      color: white;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #4338ca;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: #e8eff6;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+    footer {
+      padding: 1rem;
+      background-color: #16a085;
+      color: white;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      document.querySelector('.card').style.display = 'block';
+    };
+    function showAbout() {
+      document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'block';
+      });
+      document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>👋 Xin Chào, Tôi Là [Tên Của Bạn]</h1>
+    <p>💻 Web Developer | 🚀 Đam Mê Công Nghệ | 🎨 Yêu Thích Sáng Tạo</p>
+  </header>
+
+  <div class="card">
+    <p>Đây là nơi hội tụ sự tuyệt vời và sáng tạo! 🚀</p>
+    <button onclick="showAbout()">Khám phá ngay</button>
+  </div>
+
+  <section class="section about">
+    <img src="about.jpg" alt="Giới Thiệu">
+    <h2>📘 Giới Thiệu</h2>
+    <p>Tôi là một lập trình viên sáng tạo, luôn tìm kiếm cơ hội để học hỏi và phát triển những sản phẩm web độc đáo và hữu ích.</p>
+  </section>
+
+  <section class="section skills">
+    <img src="skills.jpg" alt="Kỹ Năng">
+    <h2>🚀 Kỹ Năng</h2>
+    <ul>
+      <li>💻 HTML, CSS, JavaScript</li>
+      <li>⚙️ React, Vue.js</li>
+      <li>🛠️ Git, Figma, VSCode</li>
+      <li>🎨 UI/UX và thiết kế giao diện hiện đại</li>
+    </ul>
+  </section>
+
+  <section class="section contact">
+    <img src="contact.jpg" alt="Liên Hệ">
+    <h2>📞 Liên Hệ</h2>
+    <p>📧 Email: example@example.com</p>
+    <p>📱 Số điện thoại: 0123 456 789</p>
+    <p>🌐 Website: www.example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 [Tên Của Bạn]. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
